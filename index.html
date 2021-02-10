@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sifat Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS reset */
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url("img/gymphoto1.jpg");
+    }
+
+    /* start header css from now */
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        top: 20px;
+        /* border: 2px solid red; */
+    }
+
+    .left img {
+        width: 100px;
+        filter: invert(100);
+
+    }
+
+    .left div {
+        line-height: 11px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 35%;
+        margin: 29px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 42px;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 0px 9px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.432);
+        padding: 3px 4px;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 110px 82px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 30px;
+    }
+
+    .formgroup input {
+        text-align: center;
+        display: block;
+        width: 465px;
+        padding: 4px;
+        border: 2px solid black;
+        margin: 9px auto;
+        font-size: 21px;
+        border-radius: 9px;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 76%;
+        margin: 24px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>Sifat Fitness</div>
+        </div>
+
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for button -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+        <div class="container">
+            <h1>join the best gym in Delhi now</h1>
+            <form action="noaction.php">
+                <div class="formgroup">
+                    <input type="text" name="" placeholder="Enter your Name">
+                </div>
+                <div class="formgroup">
+                    <input type="text" name="" placeholder="Enter your Age">
+                </div>
+                <div class="formgroup">
+                    <input type="text" name="" placeholder="Enter your Gender">
+                </div>
+                <div class="formgroup">
+                    <input type="text" name="" placeholder="Enter your Locality">
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </header>
+</body>
+
+</html>
