@@ -30,7 +30,14 @@
     .left img {
         width: 100px;
         filter: invert(100);
+        transition: all;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+    }
 
+    .left img:hover {
+        width: 200px;
+        filter: invert(100);
     }
 
     .left div {
